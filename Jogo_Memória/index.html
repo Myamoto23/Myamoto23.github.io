@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="Jogo_memoria.css">
+</head>
+<body>
+    <!-- Pop-up para começar o jogo -->
+    <div id="start-popup" class="popup">
+        <p>Tenta a tua sorte!</p>
+        <button id="start-game">Jogar</button>
+    </div>
+
+    <!-- Temporizador no canto superior direito -->
+    <div id="timer">30</div>
+
+    <div class="memory-game">
+        <div class="memory-card" data-framework="angular">
+            <img class="front-face" src="astronomiaa.png" alt="Angular">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="angular">
+            <img class="front-face" src="astronomiaa.png" alt="Angular">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="react">
+            <img class="front-face" src="deteção remotaa.jpg" alt="React">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="react">
+            <img class="front-face" src="deteção remotaa.jpg" alt="React">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="vue">
+            <img class="front-face" src="geofisicaa.png" alt="Vue">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="vue">
+            <img class="front-face" src="geofisicaa.png" alt="Vue">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <!-- Novas cartas adicionadas -->
+        <div class="memory-card" data-framework="svelte">
+            <img class="front-face" src="giss.png" alt="Svelte">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="svelte">
+            <img class="front-face" src="giss.png" alt="Svelte">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="jquery">
+            <img class="front-face" src="topo1.png" alt="jQuery">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="jquery">
+            <img class="front-face" src="topo1.png" alt="jQuery">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="ember">
+            <img class="front-face" src="hidrografia1.jpg" alt="Ember">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+        <div class="memory-card" data-framework="ember">
+            <img class="front-face" src="hidrografia1.jpg" alt="Ember">
+            <img class="back-face" src="Capa_Carta.jpg" alt="JS Badge">
+        </div>
+    </div>
+
+    <!-- Pop-up de vitória -->
+    <div id="victory-popup" class="popup">
+        <p>Parabéns, ganhou um prémio!</p>
+        <button id="play-again">Voltar a jogar</button>
+    </div>
+
+    <!-- Pop-up de derrota -->
+    <div id="lose-popup" class="popup">
+        <p>Perdeu!</p>
+        <p>Cada derrota é uma boa oportunidade para aprender mais</p>
+        <p>Sobre Geoespacial</p>
+        <button id="restart-game">Voltar a jogar</button>
+    </div>
+
+    <script src="Jogo_memória.js"></script>
+</body>
+</html>
+
